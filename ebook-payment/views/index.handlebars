@@ -1,0 +1,25 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3.mt-3 pt-5">
+                TechApp Ebook
+            </h1>
+            <p class="lead"> Here is the app created</p>
+            <form action="/charge" method="post" method="POST">
+                <script
+                    src = "https://checkout.stripe.com/checkout.js"
+                    class ="stripe-button"
+                    data-key = "{{stripePublishableKey}}"
+                    data-amount = "2500"
+                    data-name = "Product Name"
+                    data-description = "Ebook written by Angelique RF"
+                    data-image = "/img/agreed.jpg"
+                    data-locale = "auto">
+                </script>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/pay.png" class="img-fluid">
+        </div>
+    </div>
+</section>
